@@ -88,7 +88,8 @@ const Navbar = ({activeSection}) => {
 				</div>
 			</div>
 			{/* Mobile Menu */}
-			<div className={`lg:hidden transition-all duration-300 ease-in-out`}>
+			<div
+				className={`lg:hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-105 opacity-100" : "max-h-0 opacity-0"}`}>
 				<div className="px-3 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md shadow-lg border-gray-100">
 					{navLinks.map((link) => {
 						return (
