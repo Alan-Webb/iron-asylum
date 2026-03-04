@@ -87,6 +87,7 @@ const Navbar = ({activeSection}) => {
 					</div>
 				</div>
 			</div>
+			
 			{/* Mobile Menu */}
 			<div
 				className={`lg:hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-105 opacity-100" : "max-h-0 opacity-0"}`}>
