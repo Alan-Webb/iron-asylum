@@ -20,17 +20,21 @@ const Navbar = ({activeSection}) => {
 	];
 
 	return (
-		<nav className={`fixed w-full z-50 transition-all duration-300`}>
+		<nav
+			className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex justify-between h-20">
 					<div className="flex items-center">
 						<div className="shrink-0">
-							<span className="text-2xl font-extrabold">
+							<span
+								className={`text-2xl font-extrabold ${scrolled ? "text-gray-900" : "text-white"}`}>
 								IRON <span className="text-red-600">ASYLUM</span>
 							</span>
-							<div className={`ml-2 w-2 rounded-full animate-pulse`}></div>
+							<div
+								className={`ml-2 w-2 rounded-full animate-pulse ${scrolled ? "bg-red-600" : "bg-white"}`}></div>
 						</div>
 					</div>
+					
 					{/* Desktop Menu */}
 					<div className="hidden lg:flex items-center space-x-1">
 						{navLinks.map((link) => {
@@ -56,7 +60,7 @@ const Navbar = ({activeSection}) => {
 					<div className="lg:hidden flex items-center">
 						<button
 							onClick={handleToggleMenu}
-							className={`p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500`}>
+							className={`p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500 cursor-pointer`}>
 							<span className="sr-only">
 								{isOpen ? "Close Menu" : "Open Menu"}
 							</span>
