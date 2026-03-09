@@ -34,7 +34,7 @@ const Navbar = ({activeSection}) => {
 								className={`ml-2 w-2 rounded-full animate-pulse ${scrolled ? "bg-red-600" : "bg-white"}`}></div>
 						</div>
 					</div>
-					
+
 					{/* Desktop Menu */}
 					<div className="hidden lg:flex items-center space-x-1">
 						{navLinks.map((link) => {
@@ -51,7 +51,7 @@ const Navbar = ({activeSection}) => {
 						})}
 						<a
 							href="#join"
-							className={`ml-3 px-6 py-2 rounded-full font-medium text-sm transition-all duration-300 transform hover:translate-y-0.5`}>
+							className={`ml-3 px-6 py-2 rounded-full font-medium text-sm transition-all duration-300 transform hover:translate-y-0.5 ${scrolled ? "bg-red-600 text-white hover:bg-red-700 hover:shadow-lg" : "bg-white text-red-700 hover:bg-gray-100"}`}>
 							Join Now
 						</a>
 					</div>
