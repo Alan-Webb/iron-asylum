@@ -60,7 +60,7 @@ const Navbar = ({activeSection}) => {
 					<div className="lg:hidden flex items-center">
 						<button
 							onClick={handleToggleMenu}
-							className={`p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500 cursor-pointer`}>
+							className={`p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500 cursor-pointer ${scrolled ? "text-gray-800" : "text-white"}`}>
 							<span className="sr-only">
 								{isOpen ? "Close Menu" : "Open Menu"}
 							</span>
@@ -110,8 +110,8 @@ const Navbar = ({activeSection}) => {
 					})}
 					<div className="pt-2 pb-1">
 						<a
-							href=""
-							className="block w-full px-4 py-3 bg-red-600 text-white text-center font-medium rounded-lg hover:bg-primary-700">
+							href="#join"
+							className={`ml-3 px-6 py-2 rounded-full font-medium text-sm transition-all duration-300 transform hover:translate-y-0.5 ${scrolled ? "bg-red-600 text-white hover:bg-red-700 hover:shadow-lg" : "bg-white text-red-700 hover:bg-gray-100"}`}>
 							Join Now
 						</a>
 					</div>
