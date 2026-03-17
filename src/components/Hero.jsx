@@ -20,7 +20,7 @@ const Hero = () => {
 							<div
 								className={`max-w-2xl transition-all duration-1000 transform`}>
 								{/* Heading */}
-								<h1 className="text-7xl font-bold text-white mb-8 leading-tight uppercase">
+								<h1 className="text-7xl font-bold text-white mb-8 leading-tight uppercase mt-26">
 									<span className="block">Upgrade</span>
 									<span className="block">
 										Your{" "}
