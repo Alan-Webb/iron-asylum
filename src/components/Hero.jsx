@@ -20,7 +20,7 @@ const Hero = () => {
 							<div
 								className={`max-w-2xl transition-all duration-1000 transform`}>
 								{/* Heading */}
-								<h1 className="text-7xl font-bold text-white mb-8 leading-tight uppercase mt-26">
+								<h1 className="text-7xl font-bold text-white mb-8 leading-tight uppercase">
 									<span className="block">Upgrade</span>
 									<span className="block">
 										Your{" "}
@@ -59,11 +59,9 @@ const Hero = () => {
 										<div className="absolute inset-0 bg-linear-to-r from-red-700 to-red-500 transform scale-x-0 group-hover:scale-100 transition-all duration-300 origin-left"></div>
 									</a>
 								</div>
-
 								<div className="mt-16 flex items-center space-x-8">
 									<div className="flex -space-x-3">
 										{/* Map Method */}
-
 										<div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden ring-2 ring-red-500/20 shadow-lg">
 											<img
 												src=""
@@ -80,109 +78,112 @@ const Hero = () => {
 									</div>
 								</div>
 							</div>
-						</div>
-						{/* Animated Stats */}
-						<div
-							className={`w-full max-w-md transition-all duration-100 delay-500 transform`}>
-							<div className="bg-black/40 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-xl relative overflow-hidden hidden lg:block">
-								{/* Decorative Elements */}
-								<div className="absolute top-0 right-0 w-40 h-40 bg-red-60/20 rounded-full blur-2xl transform translate-x-20 -translate-y-20"></div>
-								<div className="absolute bottom-0 left-0 w-32 h-32 bg-red-400/20 rounded-full blur-2xl transform -translate-x-16 translate-y-16"></div>
-
-								{/* Content */}
-								<div className="relative z-10">
-									<div className="flex items-center justify-between mb-8">
-										<h3 className="text-2xl font-bold text-white">
-											Why Choose Us?
-										</h3>
-										<div className="flex space-x-1">
-											<span className="h-2 w-2 rounded-full bg-red-400"></span>
-											<span className="h-2 w-2 rounded-full bg-white/50"></span>
-											<span className="h-2 w-2 rounded-full bg-white/50"></span>
+							{/* Animated Stats */}
+							<div
+								className={`w-full max-w-md transition-all duration-100 delay-500 transform`}>
+								<div className="bg-black/40 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-xl relative overflow-hidden hidden lg:block">
+									{/* Decorative Elements */}
+									<div className="absolute top-0 right-0 w-40 h-40 bg-red-60/20 rounded-full blur-2xl transform translate-x-20 -translate-y-20"></div>
+									<div className="absolute bottom-0 left-0 w-32 h-32 bg-red-400/20 rounded-full blur-2xl transform -translate-x-16 translate-y-16"></div>
+									{/* Content */}
+									<div className="relative z-10">
+										<div className="flex items-center justify-between mb-8">
+											<h3 className="text-2xl font-bold text-white">
+												Why Choose Us?
+											</h3>
+											<div className="flex space-x-1">
+												<span className="h-2 w-2 rounded-full bg-red-400"></span>
+												<span className="h-2 w-2 rounded-full bg-white/50"></span>
+												<span className="h-2 w-2 rounded-full bg-white/50"></span>
+											</div>
 										</div>
-									</div>
-
-									<div className="space-y-8">
-										{/* Bullet Point 1 */}
-										<div className="flex items-start gap-4">
+										<div className="space-y-8">
 											{/* Bullet Point 1 */}
-											<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0">
-												<svg
-													className="w-6 h-6 text-red-400"
-													fill="none"
-													viewBox="0 0 24 24"
-													stroke="currentColor">
-													<path
-														strokeLinecap="round"
-														strokeLinejoin="round"
-														strokeWidth={2}
-														d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-													/>
-												</svg>
+											<div className="flex items-start gap-4">
+												{/* Bullet Point 1 */}
+												<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0">
+													<svg
+														className="w-6 h-6 text-red-400"
+														fill="none"
+														viewBox="0 0 24 24"
+														stroke="currentColor">
+														<path
+															strokeLinecap="round"
+															strokeLinejoin="round"
+															strokeWidth={2}
+															d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+														/>
+													</svg>
+												</div>
+												<div>
+													<h3 className="text-white font-semibold text-lg">
+														Cutting Edge Equipment
+													</h3>
+													<p className="text-gray-300 text-sm mt-1">
+														Access to the latest in Droid maintenance and
+														upgrade tools in the industry
+													</p>
+												</div>
 											</div>
-											<div>
-												<h3 className="text-white font-semibold text-lg">
-													Cutting Edge Equipment
-												</h3>
-												<p className="text-gray-300 text-sm mt-1">
-													Access to the latest in Droid maintenance and upgrade
-													tools in the industry
-												</p>
+											{/* Bullet Point 2 */}
+											<div className="flex items-start gap-4">
+												<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0">
+													<svg
+														className="w-6 h-6 text-red-400"
+														fill="none"
+														viewBox="0 0 24 24"
+														stroke="currentColor">
+														<path
+															strokeLinecap="round"
+															strokeLinejoin="round"
+															strokeWidth={2}
+															d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+														/>
+													</svg>
+												</div>
+												<div>
+													<h3 className="text-white font-semibold text-lg">
+														Expert Trainers
+													</h3>
+													<p className="text-gray-300 text-sm mt-1">
+														Have your droid experience the best code upgrades
+														and cleaners in the industry
+													</p>
+												</div>
+											</div>
+											{/* Bullet Point 3 */}
+											<div className="flex items-start gap-4">
+												<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0">
+													<svg
+														className="w-6 h-6 text-red-400"
+														fill="none"
+														viewBox="0 0 24 24"
+														stroke="currentColor">
+														<path
+															strokeLinecap="round"
+															strokeLinejoin="round"
+															strokeWidth={2}
+															d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+														/>
+													</svg>
+												</div>
+												<div>
+													<h3 className="text-white font-semibold text-lg">
+														Bonding Classes
+													</h3>
+													<p className="text-gray-300 text-sm mt-1">
+														Be in harmony with you beloved droid. Make them feel
+														like family
+													</p>
+												</div>
 											</div>
 										</div>
-
-										{/* Bullet Point 2 */}
-										<div className="flex items-start gap-4">
-											<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0">
-												<svg
-													className="w-6 h-6 text-red-400"
-													fill="none"
-													viewBox="0 0 24 24"
-													stroke="currentColor">
-													<path
-														strokeLinecap="round"
-														strokeLinejoin="round"
-														strokeWidth={2}
-														d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-													/>
-												</svg>
-											</div>
-											<div>
-												<h3 className="text-white font-semibold text-lg">
-													Expert Trainers
-												</h3>
-												<p className="text-gray-300 text-sm mt-1">
-													Have your droid experience the best code upgrades and
-													cleaners in the industry
-												</p>
-											</div>
-										</div>
-
-										{/* Bullet Point 3 */}
-										<div className="flex items-start gap-4">
-											<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0">
-												<svg
-													className="w-6 h-6 text-red-400"
-													fill="none"
-													viewBox="0 0 24 24"
-													stroke="currentColor">
-													<path
-														strokeLinecap="round"
-														strokeLinejoin="round"
-														strokeWidth={2}
-														d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-													/>
-												</svg>
-											</div>
-											<div>
-												<h3 className="text-white font-semibold text-lg">
-													Bonding Classes
-												</h3>
-												<p className="text-gray-300 text-sm mt-1">
-													Be in harmony with you beloved droid. Make them feel
-													like family
-												</p>
-											</div>
+										<div className="mt-10 pt-6 border-t border-white/10">
+											<a
+												href="#features"
+												className="inline-flex items-center text-red-400 font-medium group">
+												Discover all features
+											</a>
 										</div>
 									</div>
 								</div>
