@@ -1,3 +1,7 @@
+import {FaChalkboardTeacher} from "react-icons/fa";
+import {FaScrewdriverWrench} from "react-icons/fa6";
+import {LiaSchoolSolid} from "react-icons/lia";
+
 const Hero = () => {
 	return (
 		<div className="relative h-screen overflow-hidden md:h-100vh">
@@ -100,80 +104,46 @@ const Hero = () => {
 										<div className="space-y-8">
 											{/* Bullet Point 1 */}
 											<div className="flex items-start gap-4">
-												{/* Bullet Point 1 */}
-												<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0">
-													<svg
-														className="w-6 h-6 text-red-400"
-														fill="none"
-														viewBox="0 0 24 24"
-														stroke="currentColor">
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															strokeWidth={2}
-															d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-														/>
-													</svg>
+												<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 text-3xl text-stone-300">
+													<FaScrewdriverWrench />
 												</div>
 												<div>
 													<h3 className="text-white font-semibold text-lg">
 														Cutting Edge Equipment
 													</h3>
 													<p className="text-gray-300 text-sm mt-1">
-														Access to the latest in Droid maintenance and
+														Access to the latest in droid maintenance and
 														upgrade tools in the industry
 													</p>
 												</div>
 											</div>
 											{/* Bullet Point 2 */}
 											<div className="flex items-start gap-4">
-												<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0">
-													<svg
-														className="w-6 h-6 text-red-400"
-														fill="none"
-														viewBox="0 0 24 24"
-														stroke="currentColor">
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															strokeWidth={2}
-															d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-														/>
-													</svg>
+												<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 text-3xl text-stone-300">
+													<FaChalkboardTeacher />
 												</div>
 												<div>
 													<h3 className="text-white font-semibold text-lg">
 														Expert Trainers
 													</h3>
 													<p className="text-gray-300 text-sm mt-1">
-														Have your droid experience the best code upgrades
-														and cleaners in the industry
+														Have your droid experience the best code behavior
+														coaches in the industry
 													</p>
 												</div>
 											</div>
 											{/* Bullet Point 3 */}
 											<div className="flex items-start gap-4">
-												<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0">
-													<svg
-														className="w-6 h-6 text-red-400"
-														fill="none"
-														viewBox="0 0 24 24"
-														stroke="currentColor">
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															strokeWidth={2}
-															d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-														/>
-													</svg>
+												<div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 text-4xl text-stone-300">
+													<LiaSchoolSolid />
 												</div>
 												<div>
 													<h3 className="text-white font-semibold text-lg">
 														Bonding Classes
 													</h3>
 													<p className="text-gray-300 text-sm mt-1">
-														Be in harmony with you beloved droid. Make them feel
-														like family
+														Be in harmony with your beloved droid. Make them
+														feel like family
 													</p>
 												</div>
 											</div>
