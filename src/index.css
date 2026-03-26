@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
-:root {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	font-family: "Arimo", sans-serif;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
