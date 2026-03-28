@@ -1,33 +1,20 @@
-import {Link} from "react-router";
-import {GiCyborgFace} from "react-icons/gi";
-
 const Navbar = () => {
 	return (
-		<nav className="w-full h-auto bg-transparent backdrop-blur-lg shadow-none lg:px-24 md:px-16 sm:px-6 px-4 z-50">
-			<div className="justify-between mx-auto lg:w-full md:items-center md:flex">
-				{/* Navbar & Toggle */}
-				<div>
-					<div className="flex items-center justify-between py-1 md:py-1 md:block">
-						{/* Logo */}
-						<Link
-							to="/"
-							className="text-4xl text-red-600 font-semibold tracking-[o.1rem] flex items-end gap-x-1 relative">
-							IR
-							<span className=" text-neutral-100">
-								<GiCyborgFace className="h-10 w-8" />
-							</span>
-							N<span className="text-neutral-400">ASYLUM</span>
-						</Link>
-
-						{/* Toggle */}
-						<div className="md:hidden">
-							<button className="p-2 text-neutral-700 outline-none focus:outline-none border-none cursor-pointer"></button>
-						</div>
-					</div>
+		<div>
+			<div>
+				{/* Logo */}
+				<div className="flex py-4 px-3 space-x-2 text-3xl font-bold uppercase">
+					<img
+						src="/src/assets/logo.webp"
+						alt="Iron Asylum Logo"
+						className="w-10"
+					/>
+					<span className="text-red-600">Iron</span>
+					<span className="text-neutral-950">Asylum</span>
 				</div>
-				{/* Navbar Items & Btn */}
+				
 			</div>
-		</nav>
+		</div>
 	);
 };
 

@@ -1,17 +1,10 @@
-import {BrowserRouter as Router} from "react-router";
-import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
 
 const App = () => {
 	return (
-		<>
-			<Router>
-				<main className="w-full min-h-screen flex flex-col bg-neutral-950">
-					{/* Home */}
-					<Home />
-					{/* Footer */}
-				</main>
-			</Router>
-		</>
+		<div>
+			<Navbar />
+		</div>
 	);
 };
 
