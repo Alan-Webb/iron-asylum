@@ -1,5 +1,12 @@
 const Hero = () => {
-	return <div>Hero</div>;
+	return (
+		<div>
+			{/* Banner Section */}
+			<div id="home">
+				
+			</div>
+		</div>
+	);
 };
 
 export default Hero;
