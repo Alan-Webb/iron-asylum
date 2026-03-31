@@ -13,7 +13,7 @@ const Navbar = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	return (
-		<nav className="fixed top-0 left-0 w-full bg-linear-to-r from-black via-gray-900 to-black backdrop-blur-md shadow-lg z-50">
+		<nav className="fixed top-0 left-0 w-full bg-linear-to-r from-black via-gray-900 to-black border-b border-stone-300 backdrop-blur-md shadow-lg z-50">
 			<div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
 				{/* Logo */}
 				<div className="flex space-x-4 cursor-pointer text-2xl font-bold text-white uppercase">
