@@ -15,7 +15,7 @@ const Navbar = () => {
 	return (
 		<nav className="fixed top-0 left-0 w-full bg-linear-to-r from-black via-gray-900 to-black border-b border-stone-300 backdrop-blur-md shadow-lg z-50">
 			<div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
-				{/* Logo */}
+				{/* LOGO */}
 				<div className="flex space-x-4 cursor-pointer text-2xl font-bold text-yellow-500 uppercase">
 					<img
 						src="/src/assets/logo.svg"
@@ -25,7 +25,7 @@ const Navbar = () => {
 					<span className="text-white">Iron</span>
 					Asylum
 				</div>
-				{/* Desktop Links */}
+				{/* DESKTOP LINKS */}
 				<div className="hidden md:flex gap-8 items-center text-white font-semibold">
 					{/* Home */}
 					<Link
@@ -64,7 +64,7 @@ const Navbar = () => {
 						Contact
 					</Link>
 				</div>
-				{/* Mobile Toggle */}
+				{/* MOBILE TOGGLE */}
 				<button
 					onClick={() => setMenuOpen(!menuOpen)}
 					aria-label="Toggle Menu"
@@ -72,7 +72,7 @@ const Navbar = () => {
 					{menuOpen ? <IoMdClose /> : <FaBars />}
 				</button>
 			</div>
-			{/* Mobile Links */}
+			{/* MOBILE LINKS */}
 			{menuOpen && (
 				<div className="flex flex-col md:hidden h-screen bg-gray-800 text-5xl text-white uppercase items-center gap-8 py-24">
 					{/* Home */}
