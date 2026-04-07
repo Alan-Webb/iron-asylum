@@ -1,13 +1,15 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Wcu from "./components/Wcu";
+import WhyChooseUs from "./components/WhyChooseUs";
+import MeetOurTrainers from "./components/MeetOurTrainers";
 
 const App = () => {
 	return (
 		<>
 			<Navbar />
 			<Hero />
-			<Wcu />
+			<WhyChooseUs />
+			<MeetOurTrainers />
 		</>
 	);
 };
