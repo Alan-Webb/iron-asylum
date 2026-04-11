@@ -44,7 +44,11 @@ const Pricing = () => {
 				<h2 className="text-5xl font-extrabold  text-transparent bg-clip-text bg-linear-to-r from-yellow-200 via-yellow-500 to-yellow-200">
 					Pricing Plans
 				</h2>
+				<p className="text-lg text-gray-400 mt-3">
+					Select the option that works for you
+				</p>
 			</div>
+			{/* Toggle Btn */}
 		</div>
 	);
 };
