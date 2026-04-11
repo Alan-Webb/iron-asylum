@@ -1,9 +1,13 @@
+import {useState} from "react";
+
 const Pricing = () => {
+	const [isAnnually, setIsAnnually] = useState(false);
+
 	const plans = [
 		{
 			name: "Beginner Plan",
 			monthly: 500,
-			yearly: 5000,
+			annually: 5000,
 			description: "Best for beginners to start their strength journey.",
 			features: [
 				{text: "Access to equipment", available: true},
@@ -15,7 +19,7 @@ const Pricing = () => {
 		{
 			name: "Premium Plan",
 			monthly: 800,
-			yearly: 8500,
+			annually: 8500,
 			description: "Designed for advanced users with extra perks.",
 			features: [
 				{text: "Access to premium equipment", available: true},
@@ -27,7 +31,7 @@ const Pricing = () => {
 		{
 			name: "Pro Plan",
 			monthly: 1000,
-			yearly: 10800,
+			annually: 10800,
 			description: "Ideal for professionals aiming for peak performance.",
 			features: [
 				{text: "Unlimited gym access", available: true},
@@ -49,6 +53,21 @@ const Pricing = () => {
 				</p>
 			</div>
 			{/* Toggle Btn */}
+			<div className="flex justify-center gap-4 mb-12">
+				<button
+					onClick={() => setIsAnnually(false)}
+					className={`px-6 py-3 rounded-full font-semibold text-lg cursor-pointer ${!isAnnually ? "bg-purple-600 text-black" : "bg-gray-700 text-gray-300"}`}>
+					Monthly
+				</button>
+				<button
+					onClick={() => setIsAnnually(true)}
+					className={`px-6 py-3 rounded-full font-semibold text-lg cursor-pointer ${isAnnually ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300"}`}>
+					Annually
+				</button>
+			</div>
+			{/* Pricing Cards*/}
+			<div className="flex flex-wrap justify-center gap-6"></div>
+
 		</div>
 	);
 };
