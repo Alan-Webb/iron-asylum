@@ -1,4 +1,6 @@
 import {useState} from "react";
+import {GiMuscleUp} from "react-icons/gi";
+import {IoClose} from "react-icons/io5";
 
 const Pricing = () => {
 	const [isAnnually, setIsAnnually] = useState(false);
@@ -6,8 +8,8 @@ const Pricing = () => {
 	const plans = [
 		{
 			name: "Beginner Plan",
-			monthly: 500,
-			annually: 5000,
+			monthly: 25,
+			annually: 250,
 			description: "Best for beginners to start their strength journey.",
 			features: [
 				{text: "Access to equipment", available: true},
@@ -18,8 +20,8 @@ const Pricing = () => {
 		},
 		{
 			name: "Premium Plan",
-			monthly: 800,
-			annually: 8500,
+			monthly: 85,
+			annually: 850,
 			description: "Designed for advanced users with extra perks.",
 			features: [
 				{text: "Access to premium equipment", available: true},
@@ -30,8 +32,8 @@ const Pricing = () => {
 		},
 		{
 			name: "Pro Plan",
-			monthly: 1000,
-			annually: 10800,
+			monthly: 125,
+			annually: 1250,
 			description: "Ideal for professionals aiming for peak performance.",
 			features: [
 				{text: "Unlimited gym access", available: true},
@@ -56,18 +58,47 @@ const Pricing = () => {
 			<div className="flex justify-center gap-4 mb-12">
 				<button
 					onClick={() => setIsAnnually(false)}
-					className={`px-6 py-3 rounded-full font-semibold text-lg cursor-pointer ${!isAnnually ? "bg-purple-600 text-black" : "bg-gray-700 text-gray-300"}`}>
+					className={`px-6 py-3 rounded-full font-semibold text-lg cursor-pointer ${!isAnnually ? "bg-yellow-500 text-black" : "bg-gray-700 text-gray-300"}`}>
 					Monthly
 				</button>
 				<button
 					onClick={() => setIsAnnually(true)}
-					className={`px-6 py-3 rounded-full font-semibold text-lg cursor-pointer ${isAnnually ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300"}`}>
+					className={`px-6 py-3 rounded-full font-semibold text-lg cursor-pointer ${isAnnually ? "bg-yellow-500 text-white" : "bg-gray-700 text-gray-300"}`}>
 					Annually
 				</button>
 			</div>
 			{/* Pricing Cards*/}
-			<div className="flex flex-wrap justify-center gap-6"></div>
-
+			<div className="flex flex-wrap justify-center gap-6 text-center">
+				{plans.map((plan, index) => (
+					<div
+						key={index}
+						className={`relative border-4 hover:border-yellow-500 max-w-sm w-full bg-gray-800 p-8 rounded-3xl shadow-lg hover:shadow-2xl transform transition-all duration-500 ${index === 1 ? "hover:scale-105 border-4 bg-gray-700" : "border-2"} `}>
+						<h3 className="text-2xl font-bold mb-4 text-white">{plan.name}</h3>
+						<p className="text-lg text-gray-400 mb-6">{plan.description}</p>
+						<p className="text-4xl font-extrabold text-white mb-4">
+							${isAnnually ? plan.annually : plan.monthly} {""}
+							<span className="text-lg font-medium text-gray-400">
+								/ {isAnnually ? "Per Year" : "Per Month"}
+							</span>
+						</p>
+						<ul className="space-y-3 mb-6">
+							{plan.features.map((feature, i) => (
+								<li key={i} className="flex items-center gap-3">
+									{feature.available ? (
+										<span className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-black">
+											<GiMuscleUp />
+										</span>
+									) : (
+										<span className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-white">
+											<IoClose />
+										</span>
+									)}
+								</li>
+							))}
+						</ul>
+					</div>
+				))}
+			</div>
 		</div>
 	);
 };
