@@ -1,6 +1,6 @@
 # iron-asylum
 
-gym app website
+gym website
 
 ## Built with
 

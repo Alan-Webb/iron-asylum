@@ -12,10 +12,10 @@ const Pricing = () => {
 			annually: 250,
 			description: "Best for beginners to start their strength journey.",
 			features: [
-				{text: "Access to equipment", available: true},
+				{text: "Access to premium equipment", available: true},
 				{text: "Personal training session", available: true},
 				{text: "Dietary consultation", available: false},
-				{text: "Access to classes", available: false},
+				{text: "Access to premium classes", available: false},
 			],
 		},
 		{
@@ -72,7 +72,7 @@ const Pricing = () => {
 				{plans.map((plan, index) => (
 					<div
 						key={index}
-						className={`relative border-4 hover:border-yellow-500 max-w-sm w-full bg-gray-800 p-8 rounded-3xl shadow-lg hover:shadow-2xl transform transition-all duration-500 ${index === 1 ? "hover:scale-105 border-4 bg-gray-700" : "border-2"} `}>
+						className="relative border-4 hover:border-yellow-500 max-w-sm w-full bg-gray-800 p-8 rounded-3xl shadow-lg hover:shadow-2xl transform transition-all duration-500 hover:scale-105">
 						<h3 className="text-2xl font-bold mb-4 text-white">{plan.name}</h3>
 						<p className="text-lg text-gray-400 mb-6">{plan.description}</p>
 						<p className="text-4xl font-extrabold text-white mb-4">
@@ -93,9 +93,13 @@ const Pricing = () => {
 											<IoClose />
 										</span>
 									)}
+									<span className="text-gray-300">{feature.text}</span>
 								</li>
 							))}
 						</ul>
+						<button className="w-full bg-yellow-500 text-black p-3 rounded-full font-semibold text-lg hover:bg-yellow-600 cursor-pointer transition duration-300">
+							Choose Plan
+						</button>
 					</div>
 				))}
 			</div>

@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import WhyChooseUs from "./components/WhyChooseUs";
 import MeetOurTrainers from "./components/MeetOurTrainers";
 import Pricing from "./components/Pricing";
+import Opinions from "./components/Opinions";
 
 const App = () => {
 	return (
@@ -12,6 +13,7 @@ const App = () => {
 			<WhyChooseUs />
 			<MeetOurTrainers />
 			<Pricing />
+			<Opinions />
 		</>
 	);
 };
