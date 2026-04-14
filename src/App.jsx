@@ -4,6 +4,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import MeetOurTrainers from "./components/MeetOurTrainers";
 import Pricing from "./components/Pricing";
 import Opinions from "./components/Opinions";
+import Contact from "./components/Contact";
 
 const App = () => {
 	return (
@@ -14,6 +15,7 @@ const App = () => {
 			<MeetOurTrainers />
 			<Pricing />
 			<Opinions />
+			<Contact />
 		</>
 	);
 };
