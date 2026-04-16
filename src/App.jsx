@@ -5,6 +5,7 @@ import MeetOurTrainers from "./components/MeetOurTrainers";
 import Pricing from "./components/Pricing";
 import Opinions from "./components/Opinions";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
 	return (
@@ -16,6 +17,7 @@ const App = () => {
 			<Pricing />
 			<Opinions />
 			<Contact />
+			<Footer />
 		</>
 	);
 };
