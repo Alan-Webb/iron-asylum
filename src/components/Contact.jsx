@@ -15,7 +15,7 @@ const Contact = () => {
 				className="grid lg:grid-cols-2 gap-8">
 				{/* CONTACT DETAILS */}
 				<div className="w-full max-w-3xl lg:max-w-5xl bg-gray-900 p-6 rounded-2xl shadow-lg space-y-6">
-					<h2 className="text-3xl lg:text-4xl font-bold bg-clip-text text-transparent bg-linear-to-r from-yellow-200 via-yellow-500 to-yellow-200 mb-6">
+					<h2 className="text-3xl lg:text-4xl font-bold text-center bg-clip-text text-transparent bg-linear-to-r from-yellow-200 via-yellow-500 to-yellow-200 mb-6">
 						Get In Touch
 					</h2>
 					{/* Address */}
@@ -42,7 +42,7 @@ const Contact = () => {
 					animate={{opacity: 1, x: 0}}
 					transition={{duration: 1}}
 					className="bg-gray-900 p-6 rounded-2xl space-y-6">
-					<h2 className="text-3xl lg:text-4xl font-bold bg-clip-text text-transparent bg-linear-to-r from-yellow-200 via-yellow-500 to-yellow-200 mb-4">
+					<h2 className="text-3xl lg:text-4xl font-bold text-center bg-clip-text text-transparent bg-linear-to-r from-yellow-200 via-yellow-500 to-yellow-200 mb-4">
 						Contact Us
 					</h2>
 					{/* Name */}
