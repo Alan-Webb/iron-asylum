@@ -1,5 +1,6 @@
 import {Link} from "react-scroll";
 import {useState} from "react";
+import {GiStrongMan} from "react-icons/gi";
 import {
 	FaHome,
 	FaRegUserCircle,
@@ -17,11 +18,7 @@ const Navbar = () => {
 			<div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
 				{/* LOGO */}
 				<div className="flex space-x-4 cursor-pointer text-2xl font-bold text-yellow-500 uppercase">
-					<img
-						src="/src/assets/logo.svg"
-						alt="iron asylum logo"
-						className="bg-white rounded-full border border-white w-8"
-					/>
+					<GiStrongMan />
 					<span className="text-white">Iron</span>
 					Asylum
 				</div>

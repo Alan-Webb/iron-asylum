@@ -2,7 +2,6 @@ import {
 	FaDumbbell,
 	FaFacebook,
 	FaInstagramSquare,
-	FaPlay,
 	FaThumbsUp,
 	FaUsers,
 } from "react-icons/fa";
@@ -45,16 +44,6 @@ const Hero = () => {
 							<FaHeartCirclePlus className="text-yellow-500 text-2xl sm:text-3xl transition-transform transform group-hover:rotate-12 group-hover:scale-110" />
 							<span className="text-sm sm:text-lg font-medium">Endurance</span>
 						</div>
-					</div>
-					{/* BUTTONS*/}
-					<div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-6">
-						<button className="px-4 sm:px-6 py-2 sm:py-3 bg-yellow-400 text-black font-semibold rounded-full shadow-md hover:bg-yellow-500 transition-transform transform hover:scale-105 cursor-pointer delay-100">
-							Get Started
-						</button>
-						<button className="px-4 sm:px-6 py-2 sm:py-3 bg-white text-black font-semibold rounded-full shadow-md hover:bg-stone-300 transition-transform transform hover:scale-105 cursor-pointer delay-100 flex items-center gap-2">
-							<FaPlay className="text-xl" />
-							Watch Demo
-						</button>
 					</div>
 					{/* SOCIAL MEDIA ICONS */}
 					<div className="flex gap-6 mt-4 mb-8 animate-fadeIn delay-400 justify-center lg:justify-start">
