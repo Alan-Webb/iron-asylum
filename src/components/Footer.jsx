@@ -82,7 +82,7 @@ const Footer = () => {
 				</div>
 			</div>
 			{/* COPYRIGHT */}
-			<div className="bg-gray-900 text-gray-500 text-center py-4">
+			<div className="text-gray-400 text-center py-4">
 				<p>&#169; 2025 Iron Asylum. All rights reserved.</p>
 			</div>
 		</footer>

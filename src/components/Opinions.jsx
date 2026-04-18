@@ -1,6 +1,5 @@
 import {ImQuotesLeft, ImQuotesRight} from "react-icons/im";
 import {FaStar, FaStarHalfAlt} from "react-icons/fa";
-import {CircleChevronLeft, CircleChevronRight} from "lucide-react";
 
 const Opinions = () => {
 	const reviews = [
@@ -48,7 +47,7 @@ const Opinions = () => {
 			className="bg-linear-to-b from-black via-gray-900 to-black min-h-screen py-12 px-6">
 			{/* HEADING */}
 			<div className="text-center mb-10">
-				<h2 className="text-3xl md:text-5xl font-semibold tracking-tight bg-clip-text text-transparent bg-linear-to-r from-yellow-200 via-yellow-500 to-yellow-200">
+				<h2 className="text-3xl md:text-5xl font-semibold tracking-tight bg-clip-text text-transparent bg-linear-to-r from-yellow-200 via-yellow-500 to-yellow-200 mt-12">
 					Community Opinion
 				</h2>
 				<p className="text-gray-400 text-lg mt-2">What Our Clients Say</p>
@@ -58,7 +57,7 @@ const Opinions = () => {
 				{reviews.map((review, index) => (
 					<div
 						key={index}
-						className="bg-linear-to-br from-gray-800 to-gray-900 border border-yellow-500 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow transform hover:scale-105 duration-300">
+						className="bg-linear-to-br from-gray-800 to-gray-900 border border-yellow-500 rounded-xl p-6 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 duration-500">
 						<ImQuotesLeft className={`${review.color} text-3xl`} />
 						<h3 className="text-xl font-semibold text-white mt-4">
 							{review.name}
@@ -75,21 +74,6 @@ const Opinions = () => {
 						/>
 					</div>
 				))}
-			</div>
-			{/* NAVIGATE REVIEWS */}
-			<div className="mt-10 flex flex-col items-center space-y-6">
-				<div className="flex items-center space-x-4">
-					<button className="p-3 bg-linear-to-r from-gray-700 to-gray-800 text-yellow-500 rounded-full shadow hover:bg-linear-to-r hover:from-gray-800 hover:to-gray-900 transition-transform duration-300 transform hover:scale-110 cursor-pointer">
-						<CircleChevronLeft />
-					</button>
-					<button className="p-3 bg-linear-to-r from-gray-700 to-gray-800 text-yellow-500 rounded-full shadow hover:bg-linear-to-r hover:from-gray-800 hover:to-gray-900 transition-transform duration-300 transform hover:scale-110 cursor-pointer">
-						<CircleChevronRight />
-					</button>
-				</div>
-				{/* ADD REVIEW */}
-				<button className="bg-yellow-500 text-black font-semibold px-10 py-4 rounded-full shadow-xl transform hover:scale-110 transition-transform duration-300 cursor-pointer">
-					Add A Review
-				</button>
 			</div>
 		</div>
 	);

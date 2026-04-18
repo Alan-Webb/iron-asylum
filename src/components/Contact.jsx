@@ -14,7 +14,7 @@ const Contact = () => {
 				transition={{duration: 1}}
 				className="grid lg:grid-cols-2 gap-8">
 				{/* CONTACT DETAILS */}
-				<div className="w-full max-w-3xl lg:max-w-5xl bg-gray-900 p-6 rounded-2xl shadow-lg space-y-6">
+				<div className="w-full max-w-3xl lg:max-w-5xl bg-gray-900 p-6 rounded-2xl shadow-lg space-y-6 border border-yellow-500">
 					<h2 className="text-3xl lg:text-4xl font-bold text-center bg-clip-text text-transparent bg-linear-to-r from-yellow-200 via-yellow-500 to-yellow-200 mb-6">
 						Get In Touch
 					</h2>
@@ -41,7 +41,7 @@ const Contact = () => {
 					initial={{opacity: 0, x: 50}}
 					animate={{opacity: 1, x: 0}}
 					transition={{duration: 1}}
-					className="bg-gray-900 p-6 rounded-2xl space-y-6">
+					className="bg-gray-900 p-6 rounded-2xl space-y-6 border border-yellow-500">
 					<h2 className="text-3xl lg:text-4xl font-bold text-center bg-clip-text text-transparent bg-linear-to-r from-yellow-200 via-yellow-500 to-yellow-200 mb-4">
 						Contact Us
 					</h2>
@@ -78,7 +78,7 @@ const Contact = () => {
 					{/* Submit Btn */}
 					<button
 						type="submit"
-						className="w-full p-3 rounded-xl text-black uppercase font-bold tracking-wider text-2xl bg-linear-to-r from-yellow-200 via-yellow-500 to-yellow-200 cursor-pointer hover:opacity-90 transition">
+						className="w-full p-3 rounded-xl text-black uppercase font-extrabold tracking-wider text-2xl bg-linear-to-r from-yellow-200 via-yellow-500 to-yellow-200 cursor-pointer hover:opacity-90 transition">
 						Submit
 					</button>
 				</motion.form>

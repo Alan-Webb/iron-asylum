@@ -1,5 +1,24 @@
 import Wcu1 from "../assets/Wcu1.webp";
 
+const businessInfo = [
+	{
+		title: "Expert Trainers",
+		text: "Where knowledge meets grit and consistency, our elite coaches sculpt more than muscle, they refine technique, sharpen mindset, and turn ambition into measurable progress.",
+	},
+	{
+		title: "Modern Equipment",
+		text: "Our gym is engineered for progress, where cutting-edge machines and premium free weights become the tools that build strength, power and endurance.",
+	},
+	{
+		title: "Award Winning",
+		text: "Recognized for excellence and built on results, our reputation is earned through the transformations we deliver and the standards we refuse to lower.",
+	},
+	{
+		title: "Community Driven",
+		text: "More than a gym, together we are a tribe, a relentless clan of power lifters, bodybuilders, and go-getters who push harder, lift heavier, and rise together.",
+	},
+];
+
 const WhyChooseUs = () => {
 	return (
 		<div className="bg-linear-to-b from-black via-gray-800 to-black py-12">
@@ -19,27 +38,10 @@ const WhyChooseUs = () => {
 					{/* Left Section */}
 					<div className="lg:w-1/2 w-full">
 						<div className="grid grid-cols-1 sm:grid-cols-2 gap-8 -ml-2 sm:-ml-4 lg:-ml-6 xl:-ml-8">
-							{[
-								{
-									title: "Expert Trainers",
-									text: "Where knowledge meets grit and consistency, our elite coaches sculpt more than muscle, they refine technique, sharpen mindset, and turn ambition into measurable progress.",
-								},
-								{
-									title: "Modern Equipment",
-									text: "Our gym is engineered for progress, where cutting-edge machines and premium free weights become the tools that build strength, power and endurance.",
-								},
-								{
-									title: "Award Winning",
-									text: "Recognized for excellence and built on results, our reputation is earned through the transformations we deliver and the standards we refuse to lower.",
-								},
-								{
-									title: "Community Driven",
-									text: "More than a gym, together we are a tribe, a relentless clan of power lifters, bodybuilders, and go-getters who push harder, lift heavier, and rise together.",
-								},
-							].map((item, index) => (
+							{businessInfo.map((item, index) => (
 								<div
 									key={index}
-									className="relative flex flex-col justify-center items-center space-x-4 p-6 bg-linear-to-r from-pink-100 via-purple-100 to-indigo-100 text-gray-800 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+									className="flex flex-col justify-center items-center space-x-4 p-6 bg-linear-to-r from-gray-200 via-gray-300 to-gray-100 text-gray-800 rounded-xl shadow-lg hover:scale-110 transition-transform duration-300">
 									<h4 className="font-extrabold text-lg sm:text-xl text-center pb-2">
 										{item.title}
 									</h4>
