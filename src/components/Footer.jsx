@@ -83,7 +83,10 @@ const Footer = () => {
 			</div>
 			{/* COPYRIGHT */}
 			<div className="text-gray-400 text-center py-4">
-				<p>&#169; 2025 Iron Asylum. All rights reserved.</p>
+				<p>
+					&copy; {new Date().getFullYear()} 2025 Iron Asylum. All rights
+					reserved.
+				</p>
 			</div>
 		</footer>
 	);
